@@ -1,0 +1,39 @@
+.header {
+  position: fixed;
+  width: 100vw;
+  background: linear-gradient(
+    180deg,
+    rgba(51, 51, 51, 0.389314) 0%,
+    rgba(21, 21, 21, 0.209901) 33.39%,
+    rgba(0, 0, 0, 0.0001) 95.04%
+  );
+  mix-blend-mode: normal;
+
+  fill: white;
+  nav {
+    padding: 16px;
+    padding-bottom: 32px;
+  }
+  &__logo {
+    fill: white;
+  }
+  &__menu {
+    fill: white;
+    cursor: pointer;
+    margin-right: 16px;
+  }
+  &__basket {
+    fill: white;
+  }
+}
+
+.hero {
+  max-width: 360px;
+  height: 480px;
+  background-image: url("../../../images/mobile-main-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  margin: 0 auto;
+}

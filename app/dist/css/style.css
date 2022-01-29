@@ -1,0 +1,220 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.389314)), color-stop(33.39%, rgba(21, 21, 21, 0.209901)), color-stop(95.04%, rgba(0, 0, 0, 0.0001)));
+  background: linear-gradient(180deg, rgba(51, 51, 51, 0.389314) 0%, rgba(21, 21, 21, 0.209901) 33.39%, rgba(0, 0, 0, 0.0001) 95.04%);
+  mix-blend-mode: normal;
+  fill: white;
+}
+
+.header nav {
+  padding: 16px;
+  padding-bottom: 32px;
+}
+
+.header__logo {
+  fill: white;
+}
+
+.header__menu {
+  fill: white;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.header__basket {
+  fill: white;
+}
+
+.hero {
+  max-width: 360px;
+  height: 480px;
+  background-image: url("../../../images/mobile-main-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.footer .footer-layout {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 22px;
+}
+
+.footer__registration {
+  max-width: 440px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 0 auto;
+}
+
+.footer__registration .register-text {
+  margin-bottom: 15px;
+}
+
+.footer__social-network {
+  margin-bottom: 16px;
+}
+
+.footer__menu {
+  margin-bottom: 24px;
+}
+
+.footer__legal-section {
+  text-align: center;
+  font-size: 9px;
+  letter-spacing: 0.5px;
+  line-height: 13px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .accordian {
+    padding: 15px;
+    width: 100%;
+    border-bottom: 1px solid #e1e0e1;
+  }
+  .accordian .sub-menu__item {
+    font-size: 12px;
+  }
+  .accordian .sub-menu__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .accordian_content {
+    height: auto;
+    padding: 15px;
+    -webkit-transition: height 0.3s linear, padding-top 0.3s linear, padding-bottom 0.3s linear, border-top-width 0.3s linear, border-top-width 0.3s linear;
+    transition: height 0.3s linear, padding-top 0.3s linear, padding-bottom 0.3s linear, border-top-width 0.3s linear, border-top-width 0.3s linear;
+  }
+  .accordian_title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .desktop_version {
+    display: none;
+  }
+  .desktop_accordian {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px auto;
+  }
+  .toggled {
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 0;
+    border-width: 0 1px;
+  }
+}
+
+@media only screen and (min-width: 521px) {
+  .mobile_version {
+    display: none;
+  }
+}
+
+.registration-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.registration-form .registration-form__input {
+  width: 100%;
+  padding-left: 11px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: 1px solid #e1e0e1;
+  border-radius: 3px;
+}
+
+.registration-form .registration-form__field {
+  width: 100%;
+  max-width: 330px;
+  margin-right: 8px;
+}
+
+.registration-form .registration-form__button {
+  background-color: black;
+  height: 30px;
+  min-width: 95px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.social-netwotk__list .social-netwotk__item:not(:last-child) {
+  margin-right: 24px;
+}
+/*# sourceMappingURL=style.css.map */

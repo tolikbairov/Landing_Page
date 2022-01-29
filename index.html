@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./app/dist/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="flex flex-jc-sb flex-ai-c">
+        <div class="header__left flex">
+          <button class="header__menu flex">
+            <svg class="contact__icon" width="21" height="16">
+              <use href="./images/icons.svg#icon-menu-burger"></use>
+            </svg>
+          </button>
+          <svg class="contact__icon" width="21" height="16">
+            <use href="./images/icons.svg#icon-search"></use>
+          </svg>
+        </div>
+        <a href="/" class="header__logo flex flex-ai-c">
+          <svg class="" width="106" height="20">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <a href="/" class="header__basket flex flex-ai-c">
+          <svg class="contact__icon" width="16" height="24">
+            <use href="./images/icons.svg#icon-basket"></use>
+          </svg>
+        </a>
+      </nav>
+    </header>
+    <section class="hero"></section>
+    <footer class="footer">
+      <div class="footer-layout">
+        <div class="footer__registration">
+          <p class="register-text">
+            New arrivals. Exclusive previews. First access to sales. Sign up to
+            stay in the know.
+          </p>
+          <form class="registration-form">
+            <label class="registration-form__field">
+              <input
+                type="email"
+                name="email"
+                class="registration-form__input"
+                placeholder="Your email address"
+                required=""
+            /></label>
+            <button class="registration-form__button button" type="submit">
+              <span class="button__text">Register</span>
+            </button>
+          </form>
+        </div>
+        <div class="footer__menu">
+          <div class="desktop_accordian">
+            <div class="accordian">
+              <div class="accordian_title">About Us</div>
+              <div class="accordian_content toggled">
+                <ul class="sub-menu">
+                  <li class="sub-menu__item">Who we are</li>
+                  <li class="sub-menu__item">Our stores</li>
+                  <li class="sub-menu__item">Customer Reviews</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="accordian">
+              <div class="accordian_title">Categories</div>
+              <div class="accordian_content toggled">
+                <ul class="sub-menu">
+                  <li class="sub-menu__item">Women Fashion</li>
+                  <li class="sub-menu__item">Accessories</li>
+                  <li class="sub-menu__item">Kids</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="accordian">
+              <div class="accordian_title">Help</div>
+              <div class="accordian_content toggled">
+                <ul class="sub-menu">
+                  <li class="sub-menu__item">Cusotmer service</li>
+                  <li class="sub-menu__item">Size guide</li>
+                  <li class="sub-menu__item">Contact us</li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordian">
+              <div class="accordian_title">Payments & Delivery</div>
+              <div class="accordian_content toggled">
+                <ul class="sub-menu">
+                  <li class="sub-menu__item">Purchase terms</li>
+                  <li class="sub-menu__item">Guarantee</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__social-network">
+          <ul class="social-netwotk__list flex flex-jc-c">
+            <li class="social-netwotk__item">
+              <a href="/" class="flex flex-ai-c social-netwotk__link">
+                <svg class="social-netwotk__icon" width="19" height="19">
+                  <use href="./images/icons.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-netwotk__item">
+              <a href="/" class="flex flex-ai-c social-netwotk__link">
+                <svg class="social-netwotk__icon" width="19" height="19">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-netwotk__item">
+              <a href="/" class="flex flex-ai-c social-netwotk__link">
+                <svg class="social-netwotk__icon" width="19" height="19">
+                  <use href="./images/icons.svg#icon-snapchat"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-netwotk__item">
+              <a href="/" class="flex flex-ai-c social-netwotk__link">
+                <svg class="social-netwotk__icon" width="19" height="19">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-netwotk__item">
+              <a href="/" class="flex flex-ai-c social-netwotk__link">
+                <svg class="social-netwotk__icon" width="19" height="19">
+                  <use href="./images/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__legal-section">
+          <p class="legal-text">
+            © Copyright, AELTC 2019. All Rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app/js/index.js"></script>
+  </body>
+</html>

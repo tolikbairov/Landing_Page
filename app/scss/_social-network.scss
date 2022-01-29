@@ -1,0 +1,7 @@
+.social-netwotk__list {
+  .social-netwotk__item {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
