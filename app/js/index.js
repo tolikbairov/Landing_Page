@@ -1,4 +1,3 @@
-console.log("start work");
 document.addEventListener("DOMContentLoaded", function () {
   if (window.innerWidth < 1024) {
     document.addEventListener("click", (e) => {
@@ -88,9 +87,7 @@ sidebarCloseBtn.addEventListener("click", () => {
   toggleSidebar();
 });
 sidebar.addEventListener("click", (e) => {
-  // console.log(e.target.closest(""));
   if (e.target.closest(".btn-prev")) {
-    console.log("click-prev");
     const currentNav = e.target.closest(".sidebar__nav");
     const prevNavID = currentNav.dataset.prevNav;
 
@@ -98,7 +95,6 @@ sidebar.addEventListener("click", (e) => {
     if (prevNav) {
       currentNav.classList.toggle("show");
       prevNav.classList.toggle("show");
-      console.log("prevNav");
     }
   }
   if (e.target.closest("[data-next-nav]")) {
