@@ -34,6 +34,7 @@
     }
   }
   @media only screen and (min-width: 1024px) {
+    position: absolute;
     padding-top: 48px;
     padding-bottom: 4px;
     padding-right: 25px;
@@ -214,21 +215,5 @@
       @media only screen and (min-width: 1024px) {
       }
     }
-  }
-}
-
-.hero {
-  height: 480px;
-  background-image: url("../../../images/mobile-main-bg.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-
-  margin: 0 auto;
-  @media only screen and (min-width: 425px) {
-    height: 660px;
-  }
-  @media only screen and (min-width: 768px) {
-    background-image: url("../../../images/main-bg.jpg");
   }
 }

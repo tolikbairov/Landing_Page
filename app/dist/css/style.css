@@ -71,6 +71,24 @@ a {
   text-decoration: none;
 }
 
+.text-hidden {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute !important;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   position: fixed;
   z-index: 100;
@@ -106,6 +124,7 @@ a {
 
 @media only screen and (min-width: 1024px) {
   .header {
+    position: absolute;
     padding-top: 48px;
     padding-bottom: 4px;
     padding-right: 25px;
@@ -364,27 +383,6 @@ a {
   line-height: 16px;
   letter-spacing: 0.8px;
   color: inherit;
-}
-
-.hero {
-  height: 480px;
-  background-image: url("../../../images/mobile-main-bg.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-}
-
-@media only screen and (min-width: 425px) {
-  .hero {
-    height: 660px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .hero {
-    background-image: url("../../../images/main-bg.jpg");
-  }
 }
 
 .footer .footer-layout {
@@ -792,5 +790,50 @@ a {
   display: block;
   padding: 0 0.5em;
   color: inherit;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 480px;
+  background-image: url("../../../images/mobile-main-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero__text {
+  display: none;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 90px;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero__text {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .hero {
+    height: 660px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../../../images/main-bg.jpg");
+  }
 }
 /*# sourceMappingURL=style.css.map */

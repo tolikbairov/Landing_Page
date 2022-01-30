@@ -1,0 +1,33 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    display: none;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 90px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: $secondary-text-color;
+
+    @media only screen and (min-width: 1024px) {
+      display: block;
+    }
+  }
+
+  height: 480px;
+  background-image: url("../../../images/mobile-main-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media only screen and (min-width: 425px) {
+    height: 660px;
+  }
+  @media only screen and (min-width: 768px) {
+    background-image: url("../../../images/main-bg.jpg");
+  }
+}
