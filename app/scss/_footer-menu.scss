@@ -1,5 +1,8 @@
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   .accordian {
+    &.accordian-social {
+      display: none;
+    }
     padding: 15px;
     width: 100%;
     border-bottom: 1px solid #e1e0e1;
@@ -35,10 +38,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
+
     button {
       &.toggled {
         display: none;
@@ -55,8 +55,42 @@
     margin: 0px auto;
   }
 }
-@media only screen and (min-width: 521px) {
-  .mobile_version {
-    display: none;
+.accordian_title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.sub-menu__item {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .desktop_accordian {
+    margin-bottom: 38px;
+    display: flex;
+    justify-content: center;
+    .accordian:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  .accordian_title {
+    cursor: unset;
+    margin-bottom: 17px;
+  }
+  .accordian {
+    button {
+      display: none;
+    }
+    &.accordian-social {
+      display: block;
+    }
+  }
+  .accordian_content {
+    .sub-menu__item:not(:last-child) {
+      margin-bottom: 6px;
+    }
   }
 }

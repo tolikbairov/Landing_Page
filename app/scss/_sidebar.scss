@@ -6,7 +6,8 @@
   left: 0;
   height: 100vh;
   width: calc(100vw - 40px);
-  background-color: white;
+  background-color: $secondary-text-color;
+  color: $primary-text-color;
   z-index: 1000;
   &.show {
     display: block;
@@ -40,11 +41,11 @@
     letter-spacing: 1.2px;
     text-transform: uppercase;
 
-    color: #000000;
+    color: $primary-text-color;
   }
   & .nav-header__link {
     margin-left: auto;
-    color: black;
+    color: $primary-text-color;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
@@ -60,7 +61,7 @@
     padding-left: 15px;
     padding-bottom: 14px;
     padding-right: 16px;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid $primary-text-color;
 
     .btn-prev {
       cursor: pointer;
@@ -75,7 +76,7 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 14px;
-    border-bottom: 1px solid #f7f7f7;
+    border-bottom: 1px solid $secondary-bg-color;
     cursor: pointer;
     & .nav-item__link {
       text-decoration: none;
@@ -95,14 +96,14 @@
     padding-left: 15px;
     padding-top: 17px;
     padding-bottom: 16px;
-    background-color: #f7f7f7;
+    background-color: $secondary-bg-color;
     margin-bottom: 1px;
   }
   & .location-block {
     padding-left: 15px;
     padding-top: 17px;
     padding-bottom: 16px;
-    background-color: #f7f7f7;
+    background-color: $secondary-bg-color;
     margin-bottom: 1px;
     .location-icon {
       margin-right: 5px;

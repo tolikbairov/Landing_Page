@@ -19,13 +19,17 @@
     background-color: black;
     height: 30px;
     min-width: 95px;
-
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-family: "Poppins", sans-serif;
     letter-spacing: 1px;
     border-radius: 3px;
-    color: white;
+    color: $secondary-text-color;
     font-size: 10px;
     font-weight: 600;
     text-transform: uppercase;
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
   }
 }

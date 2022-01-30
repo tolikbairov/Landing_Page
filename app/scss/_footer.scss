@@ -1,8 +1,12 @@
 .footer {
   .footer-layout {
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer-layout__bottom {
+    padding-top: 26px;
+    padding-bottom: 24px;
+    background-color: $secondary-bg-color;
   }
   &__registration {
     max-width: 440px;
@@ -15,6 +19,9 @@
   }
   &__social-network {
     margin-bottom: 16px;
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
   }
   &__menu {
     margin-bottom: 24px;

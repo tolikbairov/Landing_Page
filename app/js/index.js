@@ -48,11 +48,20 @@ document.addEventListener("DOMContentLoaded", function () {
         openSearch = document.querySelector(".open-search__btn");
         openSearch.classList.toggle("show");
         searchBar = header.querySelector(".header__search");
-        header.classList.toggle("search-active");
+        header.classList.toggle("active");
 
         searchBar.classList.toggle("show");
       }
       //////
+    });
+  } else if (window.innerWidth >= 1024) {
+    const inputSearch = document.querySelector(".header__input");
+    const header = document.querySelector(".header");
+    inputSearch.addEventListener("focus", () => {
+      header.classList.toggle("active");
+    });
+    inputSearch.addEventListener("blur", () => {
+      header.classList.toggle("active");
     });
   }
 });

@@ -14,6 +14,15 @@
   </head>
   <body>
     <header class="header">
+      <div class="header__top-block">
+        <p>We deliver Worldwide</p>
+        <a href="" class="flex flex-ai-c">
+          <svg class="location-icon" width="10" height="13">
+            <use href="./images/icons.svg#icon-location"></use>
+          </svg>
+          Our stores</a
+        >
+      </div>
       <div class="sidebar">
         <button class="close-sidebar__btn flex" data-close-sidebar>
           <svg class="close-sidebar__icon" width="16" height="16">
@@ -22,7 +31,7 @@
         </button>
         <div class="sidebar__header-layout">
           <a href="/" class="header__logo">
-            <svg class="" width="106" height="16">
+            <svg class="header__logo-icon" width="106" height="16">
               <use href="./images/icons.svg#icon-logo"></use>
             </svg>
           </a>
@@ -93,7 +102,8 @@
                 <use href="./images/icons.svg#icon-chevron-left"></use>
               </svg>
             </button>
-            <span>Women</span> <a href="/" class="nav-header__link">View all</a>
+            <span>Women</span>
+            <a href="/" class="nav-header__link">View all</a>
           </div>
           <ul class="sidebar__nav-list">
             <li class="sidebar__nav-item" data-next-nav="women-clothing-nav">
@@ -205,17 +215,48 @@
           </button>
         </div>
         <a href="/" class="header__logo flex flex-ai-c">
-          <svg class="" width="106" height="20">
+          <svg class="header__logo-icon" width="106" height="20">
             <use href="./images/icons.svg#icon-logo"></use>
           </svg>
         </a>
-        <a href="/" class="header__basket flex flex-ai-c">
-          <svg class="contact__icon" width="16" height="24">
-            <use href="./images/icons.svg#icon-basket"></use>
-          </svg>
-        </a>
+        <div class="flex flex-ai-c">
+          <div class="login-block header__login-block">
+            <a href="/" class="sign-in__link">Sign In</a>
+            <div></div>
+            <a href="">Register</a>
+          </div>
+          <a href="/" class="header__basket flex flex-ai-c">
+            <svg class="contact__icon" width="16" height="24">
+              <use href="./images/icons.svg#icon-basket"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
-
+      <div class="header__main-nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="/" class="main-nav__link">What's new</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="/" class="main-nav__link">Women</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="/" class="main-nav__link">Accessories</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="/" class="main-nav__link">Kids</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="/" class="main-nav__link">Beauty</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="/" class="main-nav__link">Outlet</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="/" class="main-nav__link">Stories</a>
+          </li>
+        </ul>
+      </div>
       <!-- header search -->
       <div class="header__search">
         <form class="header__search-form">
@@ -235,7 +276,7 @@
     </header>
     <section class="hero"></section>
     <footer class="footer">
-      <div class="footer-layout">
+      <div class="footer-layout__top footer-layout">
         <div class="footer__registration">
           <p class="register-text">
             New arrivals. Exclusive previews. First access to sales. Sign up to
@@ -255,6 +296,8 @@
             </button>
           </form>
         </div>
+      </div>
+      <div class="footer-layout__bottom footer-layout">
         <div class="footer__menu">
           <div class="desktop_accordian">
             <div class="accordian">
@@ -273,9 +316,11 @@
               </div>
               <div class="accordian_content">
                 <ul class="sub-menu">
-                  <li class="sub-menu__item">Who we are</li>
-                  <li class="sub-menu__item">Our stores</li>
-                  <li class="sub-menu__item">Customer Reviews</li>
+                  <li class="sub-menu__item"><a href="/">Who we are</a></li>
+                  <li class="sub-menu__item"><a href="">Our stores</a></li>
+                  <li class="sub-menu__item">
+                    <a href="">Customer Reviews</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -296,9 +341,9 @@
               </div>
               <div class="accordian_content">
                 <ul class="sub-menu">
-                  <li class="sub-menu__item">Women Fashion</li>
-                  <li class="sub-menu__item">Accessories</li>
-                  <li class="sub-menu__item">Kids</li>
+                  <li class="sub-menu__item"><a href="/">Women Fashion</a></li>
+                  <li class="sub-menu__item"><a href="/">Accessories</a></li>
+                  <li class="sub-menu__item"><a href="/">Kids</a></li>
                 </ul>
               </div>
             </div>
@@ -319,9 +364,11 @@
               </div>
               <div class="accordian_content">
                 <ul class="sub-menu">
-                  <li class="sub-menu__item">Cusotmer service</li>
-                  <li class="sub-menu__item">Size guide</li>
-                  <li class="sub-menu__item">Contact us</li>
+                  <li class="sub-menu__item">
+                    <a href="/">Cusotmer service</a>
+                  </li>
+                  <li class="sub-menu__item"><a href="/">Size guide</a></li>
+                  <li class="sub-menu__item"><a href="/">Contact us</a></li>
                 </ul>
               </div>
             </div>
@@ -341,10 +388,52 @@
               </div>
               <div class="accordian_content">
                 <ul class="sub-menu">
-                  <li class="sub-menu__item">Purchase terms</li>
-                  <li class="sub-menu__item">Guarantee</li>
+                  <li class="sub-menu__item">
+                    <a href="/">Purchase terms</a>
+                  </li>
+                  <li class="sub-menu__item"><a href="/">Guarantee</a></li>
                 </ul>
               </div>
+            </div>
+            <div class="accordian accordian-social">
+              <div class="accordian_title">Social</div>
+              <ul class="social-netwotk__list flex flex-jc-c">
+                <li class="social-netwotk__item">
+                  <a href="/" class="flex flex-ai-c social-netwotk__link">
+                    <svg class="social-netwotk__icon" width="19" height="19">
+                      <use href="./images/icons.svg#icon-insta"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-netwotk__item">
+                  <a href="/" class="flex flex-ai-c social-netwotk__link">
+                    <svg class="social-netwotk__icon" width="19" height="19">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-netwotk__item">
+                  <a href="/" class="flex flex-ai-c social-netwotk__link">
+                    <svg class="social-netwotk__icon" width="19" height="19">
+                      <use href="./images/icons.svg#icon-snapchat"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-netwotk__item">
+                  <a href="/" class="flex flex-ai-c social-netwotk__link">
+                    <svg class="social-netwotk__icon" width="19" height="19">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-netwotk__item">
+                  <a href="/" class="flex flex-ai-c social-netwotk__link">
+                    <svg class="social-netwotk__icon" width="19" height="19">
+                      <use href="./images/icons.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

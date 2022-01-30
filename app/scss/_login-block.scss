@@ -1,13 +1,17 @@
 .login-block {
   a {
     text-decoration: none;
-    color: black;
+    color: inherit;
     font-weight: 600;
     font-size: 10px;
     line-height: 15px;
     /* identical to box height */
 
     letter-spacing: 1px;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
   div {
     display: inline-flex;
@@ -15,7 +19,7 @@
       content: "|";
       display: block;
       padding: 0 0.5em;
-      color: black;
+      color: inherit;
     }
   }
 }
