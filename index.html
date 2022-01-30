@@ -14,16 +14,195 @@
   </head>
   <body>
     <header class="header">
+      <div class="sidebar">
+        <button class="close-sidebar__btn flex" data-close-sidebar>
+          <svg class="close-sidebar__icon" width="16" height="16">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="sidebar__header-layout">
+          <a href="/" class="header__logo">
+            <svg class="" width="106" height="16">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="sidebar__main-nav sidebar__nav show" id="main-nav">
+          <ul class="sidebar__nav-list">
+            <li class="sidebar__nav-item">
+              <span class="menu-text">what's new</span>
+              <button class="btn-next flex flex-ai-c">
+                <svg class="next-menu-icon" width="8" height="12">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="sidebar__nav-item" data-next-nav="women-nav">
+              <span class="menu-text">women</span>
+              <button class="btn-next flex flex-ai-c">
+                <svg class="next-menu-icon" width="8" height="12">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="sidebar__nav-item">
+              <span class="menu-text">Accessories</span>
+              <button class="btn-next flex flex-ai-c">
+                <svg class="next-menu-icon" width="8" height="12">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="sidebar__nav-item">
+              <span class="menu-text">Kids</span>
+              <button class="btn-next flex flex-ai-c">
+                <svg class="next-menu-icon" width="8" height="12">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="sidebar__nav-item">
+              <span class="menu-text">Beauty</span>
+              <button class="btn-next flex flex-ai-c">
+                <svg class="next-menu-icon" width="8" height="12">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="sidebar__nav-item">
+              <span class="menu-text">Outlet</span>
+              <button class="btn-next flex flex-ai-c">
+                <svg class="next-menu-icon" width="8" height="12">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="/"><span class="menu-text">Stories</span></a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="sidebar__sub-nav sidebar__nav"
+          id="women-nav"
+          data-prev-nav="main-nav"
+        >
+          <div class="flex nav-header">
+            <button class="btn-prev flex flex-ai-c">
+              <svg class="next-menu-icon" width="10" height="13">
+                <use href="./images/icons.svg#icon-chevron-left"></use>
+              </svg>
+            </button>
+            <span>Women</span> <a href="/" class="nav-header__link">View all</a>
+          </div>
+          <ul class="sidebar__nav-list">
+            <li class="sidebar__nav-item" data-next-nav="women-clothing-nav">
+              <span class="menu-text">Clothing</span>
+              <button class="btn-next flex flex-ai-c">
+                <svg class="next-menu-icon" width="8" height="12">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="sidebar__nav-item">
+              <span class="menu-text">Collections</span>
+              <button class="btn-next flex flex-ai-c">
+                <svg class="next-menu-icon" width="8" height="12">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="sidebar__nav-item">
+              <span class="menu-text">Collabs</span>
+              <button class="btn-next flex flex-ai-c">
+                <svg class="next-menu-icon" width="8" height="12">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="sidebar__nav-item">
+              <span class="menu-text">Brands</span>
+              <button class="btn-next flex flex-ai-c">
+                <svg class="next-menu-icon" width="8" height="12">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="sidebar__sub-nav sidebar__nav"
+          id="women-clothing-nav"
+          data-prev-nav="women-nav"
+        >
+          <div class="flex nav-header">
+            <button class="btn-prev flex flex-ai-c">
+              <svg class="next-menu-icon" width="10" height="13">
+                <use href="./images/icons.svg#icon-chevron-left"></use>
+              </svg>
+            </button>
+            <span>clothing</span>
+            <a href="/" class="nav-header__link">View all</a>
+          </div>
+          <ul class="sidebar__nav-list">
+            <li class="sidebar__nav-item">
+              <a href="/" class="nav-item__link">T-shirts</a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="/" class="nav-item__link">Sweatshirts</a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="/" class="nav-item__link">Knitwear</a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="/" class="nav-item__link">Jeans</a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="/" class="nav-item__link">Jumpsuits</a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="/" class="nav-item__link">Skirts</a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="/" class="nav-item__link">Dresses</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__bottom">
+          <div class="login-block">
+            <a href="/" class="sign-in__link">Sign In</a>
+            <div></div>
+            <a href="">Register</a>
+          </div>
+          <div class="location-block">
+            <a href="" class="flex flex-ai-c">
+              <svg class="location-icon" width="10" height="13">
+                <use href="./images/icons.svg#icon-location"></use>
+              </svg>
+              Our stores</a
+            >
+          </div>
+          <p class="sidebar-bottom__text">We deliver Worldwide</p>
+        </div>
+      </div>
+      <div class="overflow"></div>
       <nav class="flex flex-jc-sb flex-ai-c">
         <div class="header__left flex">
-          <button class="header__menu flex">
+          <button class="header__menu flex" data-open-sidebar>
             <svg class="contact__icon" width="21" height="16">
               <use href="./images/icons.svg#icon-menu-burger"></use>
             </svg>
           </button>
-          <svg class="contact__icon" width="21" height="16">
-            <use href="./images/icons.svg#icon-search"></use>
-          </svg>
+          <button class="open-search__btn show flex">
+            <svg class="toggle-search__icon" width="21" height="16">
+              <use href="./images/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+          <button class="close-search__btn flex">
+            <svg class="toggle-search__icon" width="21" height="16">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
         </div>
         <a href="/" class="header__logo flex flex-ai-c">
           <svg class="" width="106" height="20">
@@ -36,6 +215,23 @@
           </svg>
         </a>
       </nav>
+
+      <!-- header search -->
+      <div class="header__search">
+        <form class="header__search-form">
+          <div class="input-wrapper">
+            <input
+              class="header__input"
+              autocomplete="off"
+              type="text"
+              placeholder="What are you looking for?"
+            />
+            <svg class="input-search__icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-search"></use>
+            </svg>
+          </div>
+        </form>
+      </div>
     </header>
     <section class="hero"></section>
     <footer class="footer">
@@ -62,8 +258,20 @@
         <div class="footer__menu">
           <div class="desktop_accordian">
             <div class="accordian">
-              <div class="accordian_title">About Us</div>
-              <div class="accordian_content toggled">
+              <div class="accordian_title">
+                About Us
+                <button class="btn-next flex flex-ai-c">
+                  <svg class="next-menu-icon" width="8" height="12">
+                    <use href="./images/icons.svg#icon-chevron-right"></use>
+                  </svg>
+                </button>
+                <button class="btn-next flex flex-ai-c toggled">
+                  <svg class="next-menu-icon" width="12" height="8">
+                    <use href="./images/icons.svg#icon-chevron-down"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="accordian_content">
                 <ul class="sub-menu">
                   <li class="sub-menu__item">Who we are</li>
                   <li class="sub-menu__item">Our stores</li>
@@ -73,8 +281,20 @@
             </div>
 
             <div class="accordian">
-              <div class="accordian_title">Categories</div>
-              <div class="accordian_content toggled">
+              <div class="accordian_title">
+                Categories
+                <button class="btn-next flex flex-ai-c">
+                  <svg class="next-menu-icon" width="8" height="12">
+                    <use href="./images/icons.svg#icon-chevron-right"></use>
+                  </svg>
+                </button>
+                <button class="btn-next flex flex-ai-c toggled">
+                  <svg class="next-menu-icon" width="12" height="8">
+                    <use href="./images/icons.svg#icon-chevron-down"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="accordian_content">
                 <ul class="sub-menu">
                   <li class="sub-menu__item">Women Fashion</li>
                   <li class="sub-menu__item">Accessories</li>
@@ -84,8 +304,20 @@
             </div>
 
             <div class="accordian">
-              <div class="accordian_title">Help</div>
-              <div class="accordian_content toggled">
+              <div class="accordian_title">
+                Help
+                <button class="btn-next flex flex-ai-c">
+                  <svg class="next-menu-icon" width="8" height="12">
+                    <use href="./images/icons.svg#icon-chevron-right"></use>
+                  </svg>
+                </button>
+                <button class="btn-next flex flex-ai-c toggled">
+                  <svg class="next-menu-icon" width="12" height="8">
+                    <use href="./images/icons.svg#icon-chevron-down"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="accordian_content">
                 <ul class="sub-menu">
                   <li class="sub-menu__item">Cusotmer service</li>
                   <li class="sub-menu__item">Size guide</li>
@@ -94,8 +326,20 @@
               </div>
             </div>
             <div class="accordian">
-              <div class="accordian_title">Payments & Delivery</div>
-              <div class="accordian_content toggled">
+              <div class="accordian_title">
+                Payments & Delivery
+                <button class="btn-next flex flex-ai-c">
+                  <svg class="next-menu-icon" width="8" height="12">
+                    <use href="./images/icons.svg#icon-chevron-right"></use>
+                  </svg>
+                </button>
+                <button class="btn-next flex flex-ai-c toggled">
+                  <svg class="next-menu-icon" width="12" height="8">
+                    <use href="./images/icons.svg#icon-chevron-down"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="accordian_content">
                 <ul class="sub-menu">
                   <li class="sub-menu__item">Purchase terms</li>
                   <li class="sub-menu__item">Guarantee</li>

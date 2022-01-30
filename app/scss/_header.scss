@@ -1,5 +1,6 @@
 .header {
   position: fixed;
+  z-index: 100;
   width: 100vw;
   background: linear-gradient(
     180deg,
@@ -10,20 +11,74 @@
   mix-blend-mode: normal;
 
   fill: white;
-  nav {
-    padding: 16px;
-    padding-bottom: 32px;
-  }
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 24px;
+  padding-bottom: 32px;
+
   &__logo {
-    fill: white;
+    fill: inherit;
   }
   &__menu {
-    fill: white;
+    fill: inherit;
     cursor: pointer;
     margin-right: 16px;
   }
   &__basket {
-    fill: white;
+    fill: inherit;
+  }
+  &__search-form {
+    background: #f7f7f7;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 585px;
+  }
+  &.search-active {
+    background: white;
+    fill: black;
+  }
+
+  &__search {
+    display: none;
+    justify-content: center;
+    margin-top: 17px;
+    .input-wrapper {
+      position: relative;
+      .input-search__icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .close-search__btn {
+    display: none;
+  }
+  .open-search__btn {
+    display: none;
+  }
+  .show {
+    display: flex;
+  }
+  &__input {
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    background: #f7f7f7;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    &::placeholder {
+      font-family: Poppins sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: 0.8px;
+      color: black;
+    }
   }
 }
 

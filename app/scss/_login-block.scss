@@ -1,0 +1,21 @@
+.login-block {
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    /* identical to box height */
+
+    letter-spacing: 1px;
+  }
+  div {
+    display: inline-flex;
+    &::before {
+      content: "|";
+      display: block;
+      padding: 0 0.5em;
+      color: black;
+    }
+  }
+}
