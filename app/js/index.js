@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ///////
 
       /**mobile search listeners */
-      if (e.target.classList.contains("toggle-search__icon")) {
+      if (e.target.closest(".toggle-search")) {
         let header = e.target.closest("header");
         closeSearch = document.querySelector(".close-search__btn");
         closeSearch.classList.toggle("show");
